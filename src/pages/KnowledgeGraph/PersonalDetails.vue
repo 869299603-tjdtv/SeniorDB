@@ -107,54 +107,6 @@
           </card>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <card type="chart">
-            <template slot="header">
-              <div class="row">
-                <div class="col-sm-6 text-left">
-                  <h5 class="card-category">Papers Stats</h5>
-                  <h2 class="card-title">Performance</h2>
-                </div>
-                <div class="col-sm-6">
-                  <div
-                    class="btn-group btn-group-toggle float-right"
-                    data-toggle="buttons"
-                  >
-                    <label
-                      v-for="(option, index) in paperTrend.tabs"
-                      :key="option"
-                      class="btn btn-success btn-sm btn-simple"
-                      :class="{
-                        active: paperTrend.bigLineChart.activeIndex === index
-                      }"
-                      :id="index"
-                    >
-                      <input
-                        type="radio"
-                        @click="initBigChart(index)"
-                        name="options"
-                        autocomplete="off"
-                        :checked="paperTrend.bigLineChart.activeIndex === index"
-                      />
-                      {{ option }}
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </template>
-            <line-chart
-              class="chart-area"
-              ref="bigChart"
-              chart-id="big-line-chart"
-              :chart-data="paperTrend.bigLineChart.chartData"
-              :gradient-colors="paperTrend.bigLineChart.gradientColors"
-              :gradient-stops="paperTrend.bigLineChart.gradientStops"
-              :extra-options="paperTrend.bigLineChart.extraOptions"
-            />
-          </card>
-        </div>
-      </div>
     </div>
     <div v-else>
       <p id="no-profile">{{ name }}'s Profile isn't updated</p>

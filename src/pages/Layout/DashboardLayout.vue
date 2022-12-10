@@ -2,7 +2,7 @@
   <div class="wrapper">
     <!-- <div class="wrapper" :class="{'nav-open': $sidebar.showSidebar}"> -->
 
-    <side-bar :background-color="backgroundColor">
+    <!-- <side-bar :background-color="backgroundColor">
       <sidebar-link to="/knowledgegraph/fields">
         <i class="tim-icons icon-vector"></i>
         <p>Knowledge Graph</p>
@@ -11,12 +11,12 @@
         <i class="tim-icons icon-paper"></i>
         <p>Node Feeds</p>
       </sidebar-link>
-    </side-bar>
+    </side-bar> -->
 
     <div class="main-panel" :data="backgroundColor">
-      <top-navbar></top-navbar>
+      <!-- <top-navbar></top-navbar> -->
       <dashboard-content @click.native="toggleSidebar"></dashboard-content>
-      <content-footer></content-footer>
+      <!-- <content-footer></content-footer> -->
     </div>
   </div>
 </template>
