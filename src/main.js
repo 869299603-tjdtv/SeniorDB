@@ -14,6 +14,7 @@ import RTLPlugin from "./RTLPlugin";
 import Notify from "@/components/NotificationPlugin";
 import i18n from "./i18n";
 import SideBar from "@/components/SidebarPlugin";
+// import router from './router';
 
 Vue.config.productionTip = false;
 
@@ -25,7 +26,13 @@ const router = new VueRouter({
   routes, // short for routes: routes
   linkExactActiveClass: "active"
 });
-
+router.beforeEach((to,from,next) =>{
+  if(to.meta.title){
+    document.title = "Aminer Dataminer"
+        
+  }
+  next();
+})
 Vue.use(VueRouter);
 Vue.use(SocialSharing);
 Vue.use(VueGitHubButtons, { useCache: true });

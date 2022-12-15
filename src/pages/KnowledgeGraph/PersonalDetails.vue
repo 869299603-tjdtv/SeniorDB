@@ -76,33 +76,18 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-12 col-md-12">
           <card class="knowledgegraph">
             <template slot="header">
-              <h5 class="card-category">社区</h5>
+              <h5 class="card-category">关系</h5>
               <h3 class="card-title">
                 <i class="tim-icons icon-square-pin text-primary "></i>
-                社区相关
+                关系图谱
               </h3>
             </template>
             <D3Net
               :netdata="JSON.parse(JSON.stringify(communityGraph))"
               :propOptions="JSON.parse(JSON.stringify(communityGraph.options))"
-            />
-          </card>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <card class="knowledgegraph">
-            <template slot="header">
-              <h5 class="card-category">领域</h5>
-              <h3 class="card-title">
-                <i class="tim-icons icon-heart-2 text-info "></i>
-                领域相关
-              </h3>
-            </template>
-            <D3Net
-              :netdata="JSON.parse(JSON.stringify(personalGraph))"
-              :propOptions="JSON.parse(JSON.stringify(personalGraph.options))"
             />
           </card>
         </div>

@@ -16,26 +16,41 @@ const routes = [
     path: "/",
     component: DashboardLayout,
     redirect: "knowledgegraph/fields",
+    meta:{
+      title:"Aminer Dataminer"
+    },
     children: [
       {
         path: "knowledgegraph/fields",
         name: "Knowledge Graph - Fields",
-        component: KGFields
+        component: KGFields,
+        meta:{
+          title:"Aminer Dataminer"
+        }
       },
       {
         path: "knowledgegraph/fields/:field",
         name: "Knowledge Graph - Field Details",
-        component: KGFieldDetails
+        component: KGFieldDetails,
+        meta:{
+          title:"Aminer Dataminer"
+        }
       },
       {
         path: "knowledgegraph/person/:name",
         name: "Personal Details",
-        component: PersonalDetails
+        component: PersonalDetails,
+        meta:{
+          title:"Aminer Dataminer"
+        }
       },
       {
         path: "nodefeeds",
         name: "Node Feeds",
-        component: NodeFeeds
+        component: NodeFeeds,
+        meta:{
+          title:"Aminer Dataminer"
+        }
       },
       // {
       //   path: "dashboard",
@@ -55,7 +70,10 @@ const routes = [
       {
         path: "user",
         name: "User Profile",
-        component: UserProfile
+        component: UserProfile,
+        meta:{
+          title:"Aminer Dataminer"
+        }
       }
       // {
       //   path: "table",
