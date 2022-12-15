@@ -19,9 +19,9 @@
         :columns="boardData.columns"
       >
         <template slot="columns">
-          <th class="text-center">Fields</th>
-          <th class="text-center">Number of People</th>
-          <th class="text-center">Action</th>
+          <th class="text-center">领域</th>
+          <th class="text-center">人数</th>
+          <th class="text-center">操作</th>
         </template>
         <template slot-scope="{ row }">
           <td

@@ -6,13 +6,13 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col" colspan="3">Node & Link</th>
+                <th scope="col" colspan="3">节点与链接</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">
-                  Number of Nodes
+                  节点数量
                 </th>
                 <td>
                   <input
@@ -30,7 +30,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Node Size
+                  节点大小
                 </th>
                 <td>
                   <input
@@ -48,7 +48,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Link Thickness
+                  链接大小
                 </th>
                 <td>
                   <input
@@ -65,7 +65,7 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row">Font Size</th>
+                <th scope="row">字体大小</th>
                 <td>
                   <input
                     type="range"
@@ -81,7 +81,7 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row">Show node names</th>
+                <th scope="row">显示节点名称</th>
                 <td>
                   <input
                     type="checkbox"
@@ -92,7 +92,7 @@
                 <td></td>
               </tr>
               <tr>
-                <th scope="row">Show link names</th>
+                <th scope="row">显示链接名称</th>
                 <td>
                   <input
                     type="checkbox"
@@ -112,13 +112,13 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col" colspan="3">Graph View</th>
+                <th scope="col" colspan="3">视图</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">
-                  Force
+                  密度
                 </th>
                 <td>
                   <input
@@ -136,7 +136,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Force X
+                  X方向密度
                 </th>
                 <td>
                   <input
@@ -154,7 +154,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Force Y
+                  Y方向密度
                 </th>
                 <td>
                   <input
@@ -172,7 +172,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Offset X
+                  X偏移
                 </th>
                 <td>
                   <input
@@ -190,7 +190,7 @@
               </tr>
               <tr>
                 <th scope="row">
-                  Offset Y
+                  Y偏移
                 </th>
                 <td>
                   <input

@@ -4,7 +4,7 @@ import axios from "axios";
 
 // create an axios instance
 const service = axios.create({
-  baseURL: "http://10.177.57.125:1124/", //"http://123.56.73.194:3389/", // url = base url + request url
+  baseURL: "http://10.177.57.125:5000/", //"http://123.56.73.194:3389/", // url = base url + request url
   // withCredentials: true, // send cookies when cross-domain requests
   timeout: 100000 // request timeout
 });

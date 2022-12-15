@@ -21,15 +21,15 @@ export function getNodeColor(
 const personalColor = ["#e14eca", "#1d8cf8"];
 
 const color = {
-  color_1: "#FF85EA", // pink
-  color_2: "#FDF200", // yellow
-  color_3: "#7B61F8", // purple
-  color_4: "#8AF7E4", // mint
-  color_5: "#FF8B8B", // orange
-  color_6: "#7FFF00", // emerald green
-  color_7: "#CE0000", // red
-  color_8: "#48ADF1", // blue
-  color_default: "#E4E4E4" // white-grey
+  color_1: "#FFFFCC", // pink
+  color_2: "#CCFFFF", // yellow
+  color_3: "#FFCCCC", // purple
+  color_4: "#003366", // mint
+  color_5: "#FF6600", // orange
+  color_6: "#99CCFF", // emerald green
+  color_7: "#FF9900", // red
+  color_8: "#99CC66", // blue
+  color_default: "#CCCCCC" // white-grey
 };
 
 function LightenDarkenColor(col, amt) {

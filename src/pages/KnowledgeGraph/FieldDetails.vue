@@ -24,9 +24,9 @@
     <card>
       <base-table :data="boardData.nodes" :columns="boardData.columns">
         <template slot="columns">
-          <th class="text-center">Name</th>
-          <th class="text-center">Number of Papers</th>
-          <th class="text-center">Action</th>
+          <th class="text-center">姓名</th>
+          <th class="text-center">论文数量</th>
+          <th class="text-center">操作</th>
         </template>
         <template slot-scope="{ row }">
           <td
@@ -49,10 +49,10 @@
             <base-button
               class="animation-on-hover"
               type="success"
-              size="sm"
+              size="m"
               @click="handleClick(row)"
             >
-              <i class="tim-icons icon-single-02" /> Profile
+              <i class="tim-icons icon-single-02" /> 主页
             </base-button>
           </td>
         </template>

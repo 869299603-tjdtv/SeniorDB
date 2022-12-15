@@ -15,7 +15,7 @@
               <tbody>
                 <tr>
                   <th scope="row" class="text-left">
-                    <b>Institution: </b>
+                    <b>部门: </b>
                   </th>
                   <td>
                     {{ info.institution }}
@@ -23,7 +23,7 @@
                 </tr>
                 <tr>
                   <th scope="row" class="text-left">
-                    <b>Occupation: </b>
+                    <b>职位: </b>
                   </th>
                   <td>
                     {{ info.occupation }}
@@ -31,7 +31,7 @@
                 </tr>
                 <tr>
                   <th scope="row" class="text-left">
-                    <b>Interests: </b>
+                    <b>研究领域: </b>
                   </th>
                   <td>
                     {{ info.interests }}
@@ -47,10 +47,10 @@
         <div class="col-8">
           <card id="papers">
             <template slot="header">
-              <h5 class="card-category">Papers</h5>
+              <h5 class="card-category">论文</h5>
               <h3 class="card-title">
                 <i class="tim-icons icon-paper text-warning "></i>
-                {{ name }}'s Papers
+                {{ name }}的论文
               </h3>
             </template>
             <div id="papers-list" class="list-group">
@@ -79,10 +79,10 @@
         <div class="col-lg-6 col-md-12">
           <card class="knowledgegraph">
             <template slot="header">
-              <h5 class="card-category">Community</h5>
+              <h5 class="card-category">社区</h5>
               <h3 class="card-title">
                 <i class="tim-icons icon-square-pin text-primary "></i>
-                Community Relations
+                社区相关
               </h3>
             </template>
             <D3Net
@@ -94,10 +94,10 @@
         <div class="col-lg-6 col-md-12">
           <card class="knowledgegraph">
             <template slot="header">
-              <h5 class="card-category">Fields</h5>
+              <h5 class="card-category">领域</h5>
               <h3 class="card-title">
                 <i class="tim-icons icon-heart-2 text-info "></i>
-                Field Connections
+                领域相关
               </h3>
             </template>
             <D3Net
@@ -109,7 +109,7 @@
       </div>
     </div>
     <div v-else>
-      <p id="no-profile">{{ name }}'s Profile isn't updated</p>
+      <p id="no-profile">{{ name }}的个人主页还未上传</p>
     </div>
   </div>
 </template>
